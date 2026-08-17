@@ -1,0 +1,33 @@
+name: corsa_telemetria
+description: Aplicativo Flutter de Telemetria Automotiva via Bluetooth Clássico com ESP32 para injeção eletrônica.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Bluetooth Clássico SPP (Serial Port Profile) para ESP32
+  flutter_bluetooth_serial: ^0.4.0
+  
+  # Gerenciamento de Permissões (Bluetooth Scan/Connect e Localização no Android 12+)
+  permission_handler: ^11.3.1
+  
+  # Ícones e Estilo
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  audioplayers: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    # Caso queira adicionar som de alerta local:
+    # - assets/sounds/alarm.mp3
